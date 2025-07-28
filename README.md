@@ -29,14 +29,14 @@ Il a été réalisé avec **React**, **Tailwind CSS**, **React Router** et **Fra
 ## Aperçus
 
 ### Version Desktop
-![Aperçu Desktop](./screenshots/desktop.png)
+<img src="./screenshots/desktop.png" alt="Aperçu Desktop" width="600" />
 
 ### Version Tablette
-![Aperçu Tablette](./screenshots/tablet.png)
+<img src="./screenshots/tablet.png" alt="Aperçu Tablette" width="400" />
 
 ### Version Mobile
-![Aperçu Mobile](./screenshots/mobile.png)
-![Aperçu Mobile](./screenshots/mobile_header.png)
+<img src="./screenshots/mobile.png" alt="Aperçu Mobile" width="300" />
+<img src="./screenshots/mobile_header.png" alt="Aperçu Mobile" width="300" />
 
 ---
 
@@ -56,3 +56,4 @@ git clone https://github.com/MaximeNlr/planets-fact-site.git
 cd planets-fact-site
 npm install
 npm run dev  # commande Vite pour lancer le serveur de dev
+```
