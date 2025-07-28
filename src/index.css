@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Antonio';
+    src: url('../src/assets/fonts/Antonio-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('../src/assets/fonts/LeagueSpartan-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+    --dark: #070724;
+    --mercuryColor: #419EBB;
+    --venusColor: #F7CC7F;
+    --earthColor: #545BFE;
+    --marsColor: #FF6A44;
+    --jupiterColor: #EBAD7A;
+    --saturnColor: #FCCB6B;
+    --uranusColor: #65F0D5;
+    --neptuneColor: #487EFA;
+    --borderColor: #38384F;
+    --greyColor: #838391;
+    --font-antonio: 'Antonio', "sans-serif";
+    --font-spartan: 'Spartan', "sans-serif",
+}
