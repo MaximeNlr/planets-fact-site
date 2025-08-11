@@ -1,7 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { AnimatePresence, motion } from "motion/react"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import data from "../../data/data.json"
 
@@ -15,6 +15,16 @@ export default function MobileHeader() {
             setIsActive(false);
         }
     }
+
+    useEffect(() => {
+        if (isActive) {
+            document.body.style.overflow = "hidden"
+        } else {
+            document.body.style.overflow = "auto"
+
+        }
+    }, [isActive])
+
     return (
         <header className="fixed w-full shrink-0 md:hidden flex flex-col bg-[var(--dark)] z-50">
             <div className="flex justify-between bg-[var(--dark)] items-center w-full h-16 px-7 py-2 border-b-[1px] border-white/10 z-40">
@@ -34,7 +44,7 @@ export default function MobileHeader() {
                         animate={{ opacity: 1, x: 0 }}
                         exit={{ opacity: 1, x: -600 }}
                         transition={{ duration: 0.4 }}
-                        className="absolute top-16 bg-[var(--dark)] h-screen w-full text-white z-30 px-4">
+                        className="absolute top-16 bg-[var(--dark)] pb-32 h-screen w-full text-white z-30 px-4 overflow-y-auto">
                         {data.map((planet) => (
                             <div
                                 key={planet.name}
