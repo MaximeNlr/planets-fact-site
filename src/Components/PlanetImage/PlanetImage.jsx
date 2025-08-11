@@ -14,7 +14,7 @@ export default function PlanetImage({ planetData, selectedTab }) {
     }
 
     return (
-        <div className="flex justify-center items-center h-[256px] md:h-[369px] md:w-1/2 relative pt-10 md:pt-16 lg:pt-0">
+        <div className="flex justify-center items-center h-[256px] md:h-[369px] md:w-1/2 relative pt-20 md:pt-16 lg:pt-0">
             <AnimatePresence mode="wait">
                 <motion.div
                     key={planetData.name}

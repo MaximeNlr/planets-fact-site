@@ -56,7 +56,7 @@ export default function MobileHeader() {
                                     <Link
                                         to={`/${planet.name.toLowerCase()}`}
                                         onClick={() => setIsActive(false)}
-                                        className="w-full flex justify-between"
+                                        className="w-full flex justify-between font-medium"
                                     >
                                         {planet.name.toUpperCase()}
                                         <span><FaAngleRight className="text-sm opacity-40" /></span>

@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "motion/react";
 
 export default function PlanetName({ planetName, planetData }) {
     return (
-        <div className="pt-16 ">
+        <div className="pt-20 md:pt-16 ">
             <AnimatePresence mode="wait">
                 <motion.h1
                     key={planetName}

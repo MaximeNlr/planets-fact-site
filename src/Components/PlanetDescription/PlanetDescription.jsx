@@ -1,7 +1,7 @@
 export default function PlanetDescription({ planetData, selectedTab }) {
     return (
         <div>
-            <div className="text-center md:text-start">
+            <div className="pt-5 md:pt-0 text-center md:text-start">
                 {selectedTab === 'planet' &&
                     <p
                         className="lg:h-[130px]"
